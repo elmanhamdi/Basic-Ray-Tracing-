@@ -1,0 +1,99 @@
+{
+  "renderSettings": {
+          "xres": 500,
+          "yres": 500,
+          "nof-refractive-bounce": 4,
+          "nof-reflective-bounce": 4,
+          "max_bounce": 5,
+          "subsample": 1,
+          "ambient_nof_sample" : 0
+
+  },
+  "sphere": [
+        {
+          "radius": 1700,
+          "position": [0.0, -1750.0, 300.0],
+          "scale": 1.0,
+          "color": [208, 243, 213],
+          "refractive": 0,
+          "reflective": 0.2
+        },
+      {
+          "radius": 90,
+          "position": [-120.0, 25.0, 100.0],
+          "scale": 1.0,
+          "color": [249, 241, 117],
+          "refractive": 0,
+          "reflective": 0.3
+        },
+        {
+          "radius": 120,
+          "position": [120.0, 65.0, 200.0],
+          "scale": 1.0,
+          "color": [188.0, 231.0, 250.0],
+          "refractive": 0,
+          "reflective": 0.8
+        },
+        {
+          "radius": 30,
+          "position": [180.0, 30.0, -200.0],
+          "scale": 1.0,
+          "color": [172, 214, 236],
+          "refractive": 0,
+          "reflective": 0
+        },
+        {
+          "radius": 50,
+          "position": [-180.0, -30, -150.0],
+          "scale": 1.0,
+          "color": [241,197, 215],
+          "refractive": 0,
+          "reflective": 0
+        },        {
+          "_comment" : "MIDDLE SPHERE - GLASS",
+          "radius": 100,
+          "position": [0.0, 0.0, -100.0],
+          "scale": 1.0,
+          "color": [236, 225, 180],
+          "refractive": 1,
+          "reflective": 0.2
+
+        },
+        {
+          "_comment" : "SMALL SPHERE - GLASS",
+          "radius": 70,
+          "position": [100.0, -110.0, -350.0],
+          "scale": 1.0,
+          "color": [236, 225, 180],
+          "refractive": 1,
+          "reflective": 0.2
+        }
+  ],
+  "camera": {
+           "position": [0.0, 1000.0, -8000.0],
+           "window_distance": 7500.0
+
+  },
+  "light": [
+           {
+        "type": "point",
+        "position":  [-100.0, 100.0, -1500.0],
+        "color": [255,255,255],
+        "intensity": 0.5
+      },
+      {
+        "type": "point",
+        "position":  [100.0, 500.0, -1500.0],
+        "color": [255,255,255],
+        "intensity": 0.5
+      },
+      {
+        "type": "dome",
+        "position":  [0,0,0],
+        "color": [255,255,255],
+        "intensity": 0.1,
+        "size": 8000
+      }
+
+  ]
+}
